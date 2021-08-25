@@ -14,7 +14,7 @@ class AchievementCategory {
       // bulk edit //print(json);
       id = json['category_id'];
       name = json['category_name'].toString();
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

@@ -18,7 +18,7 @@ class Running {
       if (json['durationInSeconds'] != null) {
         duration = Duration(seconds: json['durationInSeconds']);
       }
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

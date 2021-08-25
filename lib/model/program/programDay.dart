@@ -94,7 +94,7 @@ class ProgramDay {
       isAddonDay = json['isAddonDay'];
       ;
       notes = json['notes'];
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

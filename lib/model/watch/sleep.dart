@@ -25,7 +25,7 @@ class Sleep {
       lightSleep = json['lightSleep'];
       remSleep = json['remSleep'];
       awake = json['awake'];
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

@@ -17,7 +17,7 @@ class ProgressPhoto {
       front = json['front'].toString();
       side = json['side'].toString();
       dateTime = DateTime.parse(json['dateTime']);
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

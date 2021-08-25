@@ -58,7 +58,7 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
         : user!.bodyWeightInKilo != null
             ? user!.bodyWeightInKilo.toString()
             : '0.0';
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Save",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -132,7 +132,7 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
         : user!.bodyFatPercentage != null
             ? user!.bodyFatPercentage.toString()
             : '0.0';
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Save",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

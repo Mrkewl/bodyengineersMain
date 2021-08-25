@@ -14,30 +14,30 @@ class _DesignRouterState extends State<DesignRouter> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                   child: Text('Opening'),
                   onPressed: () {
                     Navigator.pushNamed(context, '/opening');
                   }),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Welcome'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/welcome');
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Navigation'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/navigation');
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Body Stats'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/bs_menu');
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Video Tutorial'),
                 onPressed: () {
                   Navigator.pushNamed(context, '/video_tutorial');

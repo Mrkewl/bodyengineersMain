@@ -29,7 +29,7 @@ class BodystatsDay {
           measurements.add(Measurement.fromLocalJson(item));
         }
       }
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

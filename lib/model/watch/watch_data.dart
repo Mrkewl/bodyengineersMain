@@ -34,7 +34,7 @@ class WatchDataObject {
       vo2Max = int.parse(json['vo2Max']);
       activityLevel = json['activityLevel'].toString();
       running = Running.fromLocalJson(json['running']);
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }
@@ -50,7 +50,7 @@ class WatchDataObject {
       vo2Max = garmin.vo2Max;
       activityLevel = garmin.activityLevel;
       running = garmin.running;
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }
@@ -66,7 +66,7 @@ class WatchDataObject {
       vo2Max = fitbit.vo2Max;
       activityLevel = fitbit.activityLevel;
       running = fitbit.running;
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }
@@ -82,7 +82,7 @@ class WatchDataObject {
       vo2Max = polar.vo2Max;
       activityLevel = polar.activityLevel;
       running = polar.running;
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

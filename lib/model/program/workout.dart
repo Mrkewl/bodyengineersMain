@@ -74,7 +74,7 @@ class Workout {
       if (json['runningWorkout'] != null) {
         runningWorkout = RunningWorkout.fromLocalJson(json['runningWorkout']);
       }
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

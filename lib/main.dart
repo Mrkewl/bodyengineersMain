@@ -208,7 +208,7 @@ class _MyApplicationState extends State<MyApplication> {
 }
 
 class NewScreen extends StatelessWidget {
-  String? payload;
+  final String? payload;
 
   NewScreen({
     required this.payload,

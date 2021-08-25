@@ -56,7 +56,7 @@ class Achievement {
       image = json['image'].toString();
       description = json['description'].toString();
       category = json['category'].toString();
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

@@ -17,7 +17,7 @@ class Measurement {
         isImperial = json['isImperial'];
       }
       value = json['value'];
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

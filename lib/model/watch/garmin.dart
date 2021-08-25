@@ -30,7 +30,7 @@ class Garmin {
       vo2Max = int.parse(json['vo2Max']);
       activityLevel = json['activityLevel'].toString();
       running = Running.fromLocalJson(json['running']);
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }
@@ -60,7 +60,7 @@ class Garmin {
       // vo2Max = int.parse(json['vo2Max']);
       // activityLevel = json['activityLevel'].toString();
 
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }

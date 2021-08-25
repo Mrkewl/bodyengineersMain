@@ -32,7 +32,7 @@ class _BodyMeasurementPageState extends State<BodyMeasurementPage> {
   bool isEdit = false;
 
   successMessage(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Great!",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -70,7 +70,7 @@ class _BodyMeasurementPageState extends State<BodyMeasurementPage> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

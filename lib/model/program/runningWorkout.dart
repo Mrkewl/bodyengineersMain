@@ -30,7 +30,7 @@ class RunningWorkout {
       hours = int.parse(json['hours'].toString());
       minutes = int.parse(json['minutes'].toString());
       seconds = int.parse(json['seconds'].toString());
-    } catch (e, trace) {
+    } catch (e) {
       // bulk edit //print(e.toString());
       // bulk edit //print(trace.toString());
     }
