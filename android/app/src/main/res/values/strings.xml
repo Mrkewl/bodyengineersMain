@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BodyEngineer Mobile App</string>
+    <string name="facebook_app_id">288411532450989</string>
+    <string name="fb_login_protocol_scheme">fb288411532450989</string>
+
+</resources>

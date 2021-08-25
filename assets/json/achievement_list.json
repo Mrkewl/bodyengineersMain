@@ -1,0 +1,632 @@
+[
+  {
+    "id": 1,
+    "name": "1st Workout",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "Congratulations on completing the 1st workout",
+    "image": "assets/achievements/workout_count/1.svg"
+  },
+  {
+    "id": 2,
+    "name": "Getting the Groove",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 3,
+    "description": "Keep Going, You are took 3 huge leap towards your fitness goal",
+    "image": "assets/achievements/workout_count/3.svg"
+  },
+  {
+    "id": 3,
+    "name": "5 Times!",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 5,
+    "description": "Good job in Getting 5 workouts done. You are on your way",
+    "image": "assets/achievements/workout_count/5.svg"
+  },
+  {
+    "id": 4,
+    "name": "10 Times!",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 10,
+    "description": "Great job in completing 10 Workouts",
+    "image": "assets/achievements/workout_count/10.svg"
+  },
+  {
+    "id": 5,
+    "name": "20 Times!",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 20,
+    "description": "Congratulations on completing 20 workouts",
+    "image": "assets/achievements/workout_count/20.svg"
+  },
+  {
+    "id": 6,
+    "name": "50 Workout Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 50,
+    "description": "50 Workouts done, bet you feel great about it don't ya!",
+    "image": "assets/achievements/workout_count/50.svg"
+  },
+  {
+    "id": 7,
+    "name": "HUNDRED Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 100,
+    "description": "3 Digits, That’s amazing",
+    "image": "assets/achievements/workout_count/100.svg"
+  },
+  {
+    "id": 8,
+    "name": "Hundred and fifty Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 150,
+    "description": "I'm sure if you look back, you'll feel proud",
+    "image": "assets/achievements/workout_count/150.svg"
+  },
+  {
+    "id": 9,
+    "name": "Two Hundred Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 200,
+    "description": "TwoHundredd!",
+    "image": "assets/achievements/workout_count/200.svg"
+  },
+  {
+    "id": 10,
+    "name": "300 Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 300,
+    "description": "Man, you are a beastman/woman",
+    "image": "assets/achievements/workout_count/300.svg"
+  },
+  {
+    "id": 11,
+    "name": "350 Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 350,
+    "description": "That’s almost the number of days in a year",
+    "image": "assets/achievements/workout_count/350.svg"
+  },
+  {
+    "id": 12,
+    "name": "400 Warrior",
+    "category": "Workout Count",
+    "gender": "Unisex",
+    "goal": 400,
+    "description": "4Hundreeeed!",
+    "image": "assets/achievements/workout_count/400.svg"
+  },
+  {
+    "id": 13,
+    "name": "Sticked To the Plan",
+    "category": "Program Count",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "Look Back, Feel Proud",
+    "image": "assets/achievements/program_count/1.svg"
+  },
+  {
+    "id": 14,
+    "name": "2 Plans!",
+    "category": "Program Count",
+    "gender": "Unisex",
+    "goal": 2,
+    "description": "Level Up!",
+    "image": "assets/achievements/program_count/2.svg"
+  },
+  {
+    "id": 15,
+    "name": "3 Plans!",
+    "category": "Program Count",
+    "gender": "Unisex",
+    "goal": 3,
+    "description": "Amazing",
+    "image": "assets/achievements/program_count/3.svg"
+  },
+  {
+    "id": 16,
+    "name": "4 Plans Completion!",
+    "category": "Program Count",
+    "gender": "Unisex",
+    "goal": 4,
+    "description": "Be Proud",
+    "image": "assets/achievements/program_count/4.svg"
+  },
+  {
+    "id": 17,
+    "name": "Dedication",
+    "category": "Workout Count - For a week",
+    "gender": "Unisex",
+    "goal": 5,
+    "description": "Awesome job",
+    "image": "assets/achievements/workout_count/dedication.svg"
+  },
+  {
+    "id": 18,
+    "name": "Bench Press Starter",
+    "category": "Bench Press",
+    "gender": "Unisex",
+    "goal": 0.5,
+    "description": "Damn, your presses are starting to get strong",
+    "image": "assets/achievements/exercises/bench_press/starter.svg"
+  },
+  {
+    "id": 19,
+    "name": "Bench Press Apprentice",
+    "category": "Bench Press",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "PRESS IT!",
+    "image": "assets/achievements/exercises/bench_press/apprentice.svg"
+  },
+  {
+    "id": 20,
+    "name": "Bench Press Expert",
+    "category": "Bench Press",
+    "gender": "Unisex",
+    "goal": 1.5,
+    "description": "Chuck Norris says, everytime you do a rep, a volcano erupts somewhere in the world",
+    "image": "assets/achievements/exercises/bench_press/expert.svg"
+  },
+  {
+    "id": 21,
+    "name": "Bench Press World Class",
+    "category": "Bench Press",
+    "gender": "Unisex",
+    "goal": 2,
+    "description": "Chuck Norris got scared",
+    "image": "assets/achievements/exercises/bench_press/world_class.svg"
+  },
+  {
+    "id": 22,
+    "name": "Deadlift Starter",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 0.5,
+    "description": "Good job in your first deadlift milestone",
+    "image": "assets/achievements/exercises/deadlift/starter.svg"
+  },
+  {
+    "id": 23,
+    "name": "Deadlift Apprentice",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "Nice you are getting there",
+    "image": "assets/achievements/exercises/deadlift/apprentice.svg"
+  },
+  {
+    "id": 24,
+    "name": "Deadlift Novice",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 1.5,
+    "description": "Getting Strong",
+    "image": "assets/achievements/exercises/deadlift/novice.svg"
+  },
+  {
+    "id": 25,
+    "name": "Deadlift Intermediate",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 2,
+    "description": "Wow!! 2X bodyweight",
+    "image": "assets/achievements/exercises/deadlift/intermediate.svg"
+  },
+  {
+    "id": 26,
+    "name": "Deadlift Expert",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 2.5,
+    "description": "You are really pulling earth from the floor",
+    "image": "assets/achievements/exercises/deadlift/expert.svg"
+  },
+  {
+    "id": 27,
+    "name": "Deadlift Expert +",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 3,
+    "description": "I think you have enough compliment",
+    "image": "assets/achievements/exercises/deadlift/expert_plus.svg"
+  },
+  {
+    "id": 28,
+    "name": "Deadlift Level 100",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 3.5,
+    "description": "You are a league of your own",
+    "image": "assets/achievements/exercises/deadlift/level_100.svg"
+  },
+  {
+    "id": 29,
+    "name": "Deadlift World Class",
+    "category": "Deadlift",
+    "gender": "Unisex",
+    "goal": 4,
+    "description": "Craaaaazy",
+    "image": "assets/achievements/exercises/deadlift/world_class.svg"
+  },
+  {
+    "id": 30,
+    "name": "Squat Starter",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 0.5,
+    "description": "Good job in your first deadlift milestone",
+    "image": "assets/achievements/exercises/squat/starter.svg"
+  },
+  {
+    "id": 31,
+    "name": "Squat Apprentice",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "Nice you are getting there",
+    "image": "assets/achievements/exercises/squat/apprentice.svg"
+  },
+  {
+    "id": 32,
+    "name": "Squat Novice",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 1.5,
+    "description": "Getting Strong",
+    "image": "assets/achievements/exercises/squat/novice.svg"
+  },
+  {
+    "id": 33,
+    "name": "Squat Intermediate",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 2,
+    "description": "Wow!! 2X bodyweight",
+    "image": "assets/achievements/exercises/squat/intermediate.svg"
+  },
+  {
+    "id": 34,
+    "name": "Squat Expert",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 2.5,
+    "description": "You are really pulling earth from the floor",
+    "image": "assets/achievements/exercises/squat/expert.svg"
+  },
+  {
+    "id": 35,
+    "name": "Squat Expert +",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 3,
+    "description": "I think you have enough compliment",
+    "image": "assets/achievements/exercises/squat/expert_plus.svg"
+  },
+  {
+    "id": 36,
+    "name": "Squat Level 100",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 3.5,
+    "description": "You are a league of your own",
+    "image": "assets/achievements/exercises/squat/level_100.svg"
+  },
+  {
+    "id": 37,
+    "name": "Squat World Class",
+    "category": "Squat",
+    "gender": "Unisex",
+    "goal": 4,
+    "description": "Craaaaazy",
+    "image": "assets/achievements/exercises/squat/world_class.svg"
+  },
+  {
+    "id": 38,
+    "name": "The Little Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.1,
+    "description": "On your Way",
+    "image": "assets/achievements/bodyweight/loss/loss_10.svg"
+  },
+  {
+    "id": 39,
+    "name": "20% Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.2,
+    "description": "Good job, that’s 20% closer to your goal",
+    "image": "assets/achievements/bodyweight/loss/loss_20.svg"
+  },
+  {
+    "id": 40,
+    "name": "35% Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.35,
+    "description": "Keep it going!",
+    "image": "assets/achievements/bodyweight/loss/loss_35.svg"
+  },
+  {
+    "id": 41,
+    "name": "50% Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.5,
+    "description": "Halfway there!",
+    "image": "assets/achievements/bodyweight/loss/loss_50.svg"
+  },
+  {
+    "id": 42,
+    "name": "75% Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.75,
+    "description": "75% there",
+    "image": "assets/achievements/bodyweight/loss/loss_75.svg"
+  },
+  {
+    "id": 43,
+    "name": "90% Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 0.9,
+    "description": "SOOOOO CLOSE!",
+    "image": "assets/achievements/bodyweight/loss/loss_90.svg"
+  },
+  {
+    "id": 44,
+    "name": "The Biggest Loser",
+    "category": "Bodyweight Loose Weight",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "You stick to your goal and you achieved it. Be Proud!",
+    "image": "assets/achievements/bodyweight/loss/loss_100.svg"
+  },
+  {
+    "id": 45,
+    "name": "10% Gain!",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.1,
+    "description": "On your Way",
+    "image": "assets/achievements/bodyweight/gain/gain_10.svg"
+  },
+  {
+    "id": 46,
+    "name": "20% Gain!",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.2,
+    "description": "Good job, that’s 20%closer to your goal",
+    "image": "assets/achievements/bodyweight/gain/gain_20.svg"
+  },
+  {
+    "id": 47,
+    "name": "35% Gain!",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.35,
+    "description": "Keep it going!",
+    "image": "assets/achievements/bodyweight/gain/gain_35.svg"
+  },
+  {
+    "id": 48,
+    "name": "50% Gain",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.5,
+    "description": "Halfway there!",
+    "image": "assets/achievements/bodyweight/gain/gain_50.svg"
+  },
+  {
+    "id": 49,
+    "name": "75% Gain",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.75,
+    "description": "75% there",
+    "image": "assets/achievements/bodyweight/gain/gain_75.svg"
+  },
+  {
+    "id": 50,
+    "name": "90% Gain",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Unisex",
+    "goal": 0.9,
+    "description": "SOOOOO CLOSE!",
+    "image": "assets/achievements/bodyweight/gain/gain_90.svg"
+  },
+  {
+    "id": 51,
+    "name": "Beastman",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Male",
+    "goal": 1,
+    "description": "You stick to your goal and you achieved it. Be Proud!",
+    "image": "assets/achievements/bodyweight/gain/gain_100_man.svg"
+  },
+  {
+    "id": 52,
+    "name": "Wonderwoman",
+    "category": "Bodyweight Gain Weight",
+    "gender": "Female",
+    "goal": 1,
+    "description": "You stick to your goal and you achieved it. Be Proud!",
+    "image": "assets/achievements/bodyweight/gain/gain_100_woman.svg"
+  },
+  {
+    "id": 53,
+    "name": "Lean Machine",
+    "category": "BodyFat",
+    "gender": "Male",
+    "goal": 10,
+    "description": "Shreeeded",
+    "image": "assets/achievements/lean_healthy/man/lean.svg"
+  },
+  {
+    "id": 54,
+    "name": "Healthy!",
+    "category": "BodyFat",
+    "gender": "Male",
+    "goal":15,
+    "description": "You are Perfectly Healthy!",
+    "image": "assets/achievements/lean_healthy/man/healthy.svg"
+  },
+  {
+    "id": 55,
+    "name": "Your fat rolled over and died",
+    "category": "BodyFat",
+    "gender": "Female",
+    "goal": 18,
+    "description": "Shreeeded",
+    "image": "assets/achievements/lean_healthy/woman/lean.svg"
+  },
+  {
+    "id": 56,
+    "name": "Healthy!",
+    "category": "BodyFat",
+    "gender": "Female",
+    "goal": 20,
+    "description": "You are Perfectly Healthy!",
+    "image": "assets/achievements/lean_healthy/woman/healthy.svg"
+  },
+  {
+    "id": 57,
+    "name": "1% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 1,
+    "description": "On your Way",
+    "image": "assets/achievements/bodyfat/loss/loss_1.svg"
+  },
+  {
+    "id": 58,
+    "name": "2% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 2,
+    "description": "Finding Your Groove",
+    "image": "assets/achievements/bodyfat/loss/loss_2.svg"
+  },
+  {
+    "id": 59,
+    "name": "3% Bodyfat Loss",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 3,
+    "description": "Your fat is crying",
+    "image": "assets/achievements/bodyfat/loss/loss_3.svg"
+  },
+  {
+    "id": 60,
+    "name": "4% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 4,
+    "description": "Awesome job",
+    "image": "assets/achievements/bodyfat/loss/loss_4.svg"
+  },
+  {
+    "id": 61,
+    "name": "5% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 5,
+    "description": "That’s they way, 5 % is a big achievement",
+    "image": "assets/achievements/bodyfat/loss/loss_5.svg"
+  },
+  {
+    "id": 62,
+    "name": "6% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 6,
+    "description": "6%, Closer to your goal",
+    "image": "assets/achievements/bodyfat/loss/loss_6.svg"
+  },
+  {
+    "id": 63,
+    "name": "7% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 7,
+    "description": "7% Bodyfat Loss",
+    "image": "assets/achievements/bodyfat/loss/loss_7.svg"
+  },
+  {
+    "id": 64,
+    "name": "8% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 8,
+    "description": "8% Bodyfat Loss",
+    "image": "assets/achievements/bodyfat/loss/loss_8.svg"
+  },
+  {
+    "id": 65,
+    "name": "9% BodyFat Loss!",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 9,
+    "description": "9% Bodyfat Loss",
+    "image": "assets/achievements/bodyfat/loss/loss_9.svg"
+  },
+  {
+    "id": 66,
+    "name": "10% Shreded",
+    "category": "BodyFat Loss",
+    "gender": "Unisex",
+    "goal": 10,
+    "description": "10% Bodyfat Shreded",
+    "image": "assets/achievements/bodyfat/loss/loss_10.svg"
+  },
+  {
+    "id": 67,
+    "name": "The Flash",
+    "category": "Run Time",
+    "gender": "Unisex",
+    "goal": "Run under 10 minutes - 2.4km",
+    "description": "You are The Flash",
+    "image": "assets/achievements/run/flash.svg"
+  },
+  {
+    "id": 68,
+    "name": "The Mini Marathoner",
+    "category": "Run",
+    "gender": "Unisex",
+    "goal": 5,
+    "description": "You are a half Marathoner",
+    "image": "assets/achievements/run/mini_marathoner.svg"
+  },
+  {
+    "id": 69,
+    "name": "Marathoner",
+    "category": "Run",
+    "gender": "Unisex",
+    "goal": 10,
+    "description": "Man, 10 km is awesome",
+    "image": "assets/achievements/run/marathoner.svg"
+  },
+  {
+    "id": 70,
+    "name": "Runner Legs",
+    "category": "Run",
+    "gender": "Unisex",
+    "goal": 100,
+    "description": "You have clocked 100km",
+    "image": "assets/achievements/run/runner_legs.svg"
+  }
+]
