@@ -55,7 +55,7 @@ class _AddCustomExerciseState extends State<AddCustomExercise> {
         return AlertDialog(
           content: Text('${exercise.exerciseName} has been added'),
           actions: [
-            FlatButton(
+            TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                   Navigator.pop(context);

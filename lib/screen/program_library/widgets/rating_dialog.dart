@@ -52,11 +52,11 @@ class _RatingDialogState extends State<RatingDialog> {
         ],
       ),
       actions: <Widget>[
-        FlatButton(
+        TextButton(
           child: Text('Cancel'),
           onPressed: Navigator.of(context).pop,
         ),
-        FlatButton(
+        TextButton(
           child: Text('Rate'),
           onPressed: () {
             Navigator.of(context).pop(widget.userStars);

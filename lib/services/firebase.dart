@@ -1387,7 +1387,7 @@ class FirebaseApi implements BaseServices {
     uploadTask.snapshotEvents
         .listen(onUploadProgress as void Function(TaskSnapshot)?);
     TaskSnapshot taskSnapshot = await uploadTask;
-    ;
+    
     String videoUrl = await taskSnapshot.ref.getDownloadURL();
     return videoUrl;
   }

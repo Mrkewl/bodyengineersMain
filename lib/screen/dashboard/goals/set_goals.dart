@@ -262,7 +262,7 @@ class _SetGoalsState extends State<SetGoals> {
             1
         ? 'kg'
         : 'lbs';
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -320,7 +320,7 @@ class _SetGoalsState extends State<SetGoals> {
     setState(() {
       textWeightController.text = bodyGoal.goal.toString();
     });
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -367,7 +367,7 @@ class _SetGoalsState extends State<SetGoals> {
   }
 
   addBodyfat(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -420,7 +420,7 @@ class _SetGoalsState extends State<SetGoals> {
     setState(() {
       textFatController.text = bodyGoal.goal.toString();
     });
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -532,7 +532,7 @@ class _SetGoalsState extends State<SetGoals> {
 
     _events!.add(selectedExercise);
 
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -626,7 +626,7 @@ class _SetGoalsState extends State<SetGoals> {
   }
 
   addExercise(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

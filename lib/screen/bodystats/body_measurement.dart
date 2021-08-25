@@ -288,33 +288,35 @@ class _BodyMeasurementPageState extends State<BodyMeasurementPage> {
               isEdit
                   ? Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: RaisedButton(
-                        onPressed: () async {
-                          successMessage(context);
-                          setState(() {
-                            isEdit = false;
-                          });
-                        },
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 10, horizontal: 20),
-                          child: Text(
-                            'Save',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16),
+                      child: ElevatedButton(
+                          onPressed: () async {
+                            successMessage(context);
+                            setState(() {
+                              isEdit = false;
+                            });
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 10, horizontal: 20),
+                            child: Text(
+                              'Save',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16),
+                            ),
                           ),
-                        ),
-                        color: Color.fromRGBO(8, 112, 138, 1),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
-                      ),
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                            elevation: 5,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                          )),
                     )
                   : Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: RaisedButton(
+                      child: ElevatedButton(
                         onPressed: () async {
                           setState(() {
                             isEdit = true;
@@ -331,10 +333,13 @@ class _BodyMeasurementPageState extends State<BodyMeasurementPage> {
                                 fontSize: 16),
                           ),
                         ),
-                        color: Color.fromRGBO(8, 112, 138, 1),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                        ),
                       ),
                     ),
             ],

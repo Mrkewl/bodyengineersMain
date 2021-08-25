@@ -42,7 +42,7 @@ class _RunningDetailPageState extends State<RunningDetailPage> {
   }
 
   successPopup(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Thanks!",
         style: TextStyle(
@@ -119,7 +119,7 @@ class _RunningDetailPageState extends State<RunningDetailPage> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

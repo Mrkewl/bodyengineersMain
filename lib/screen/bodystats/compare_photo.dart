@@ -64,7 +64,8 @@ class _ComparePhotoState extends State<ComparePhoto> {
       // bulk edit //print(images.where((element) => element.dateTime == DateTime.parse(beforeDate)));
       setState(() {
         frontBefore = File(images!
-            .where((element) => element!.dateTime == DateTime.parse(beforeDate!))
+            .where(
+                (element) => element!.dateTime == DateTime.parse(beforeDate!))
             .first!
             .front!);
       });
@@ -74,7 +75,8 @@ class _ComparePhotoState extends State<ComparePhoto> {
       // bulk edit //print(images.where((element) => element.dateTime == DateTime.parse(beforeDate)));
       setState(() {
         sideBefore = File(images!
-            .where((element) => element!.dateTime == DateTime.parse(beforeDate!))
+            .where(
+                (element) => element!.dateTime == DateTime.parse(beforeDate!))
             .first!
             .side!);
       });
@@ -84,7 +86,8 @@ class _ComparePhotoState extends State<ComparePhoto> {
       // bulk edit //print(images.where((element) => element.dateTime == DateTime.parse(beforeDate)));
       setState(() {
         backBefore = File(images!
-            .where((element) => element!.dateTime == DateTime.parse(beforeDate!))
+            .where(
+                (element) => element!.dateTime == DateTime.parse(beforeDate!))
             .first!
             .back!);
       });
@@ -162,7 +165,12 @@ class _ComparePhotoState extends State<ComparePhoto> {
                     SizedBox(
                       height: 30,
                       width: 70,
-                      child: RaisedButton(
+                      child: ElevatedButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                        ),
                         onPressed: () {
                           setState(() {
                             isFront = true;
@@ -174,15 +182,12 @@ class _ComparePhotoState extends State<ComparePhoto> {
                           'Front',
                           style: TextStyle(color: Colors.white),
                         ),
-                        color: Color.fromRGBO(8, 112, 138, 1),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
                       ),
                     ),
                     SizedBox(
                       height: 30,
                       width: 70,
-                      child: RaisedButton(
+                      child: ElevatedButton(
                         onPressed: () {
                           setState(() {
                             isFront = false;
@@ -194,9 +199,11 @@ class _ComparePhotoState extends State<ComparePhoto> {
                           'Side',
                           style: TextStyle(color: Colors.white),
                         ),
-                        color: Color.fromRGBO(8, 112, 138, 1),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                        ),
                       ),
                     ),
                     Padding(
@@ -204,7 +211,12 @@ class _ComparePhotoState extends State<ComparePhoto> {
                       child: SizedBox(
                         height: 30,
                         width: 70,
-                        child: RaisedButton(
+                        child: ElevatedButton(
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5)),
+                          ),
                           onPressed: () {
                             setState(() {
                               isFront = false;
@@ -216,9 +228,6 @@ class _ComparePhotoState extends State<ComparePhoto> {
                             'Back',
                             style: TextStyle(color: Colors.white),
                           ),
-                          color: Color.fromRGBO(8, 112, 138, 1),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5)),
                         ),
                       ),
                     ),

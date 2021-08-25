@@ -145,8 +145,10 @@ class _AddWorkoutState extends State<AddWorkout> {
                           }),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 15),
-                        child: RaisedButton(
-                          padding: const EdgeInsets.symmetric(horizontal: 25),
+                        child: ElevatedButton(
+                          style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                          padding: const EdgeInsets.symmetric(horizontal: 25),),
                           onPressed: () async {
                             List<ProgramDay> listProgramday = [];
                             program!.phaseList[seenPhase].programWeek[seenWeek]
@@ -169,7 +171,6 @@ class _AddWorkoutState extends State<AddWorkout> {
                             allTranslations.text('save')!,
                             style: TextStyle(color: Colors.white),
                           ),
-                          color: Color.fromRGBO(8, 112, 138, 1),
                         ),
                       ),
                     ],

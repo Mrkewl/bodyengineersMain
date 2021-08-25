@@ -52,7 +52,7 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
           content: Text(
               'If you delete this custom exercise, all data related with this exercise will delete as well. Are you sure to delete?'),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 "Cancel",
                 style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -61,7 +61,7 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
                 Navigator.pop(context);
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text(
                 "Delete",
                 style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

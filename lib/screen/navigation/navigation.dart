@@ -236,11 +236,11 @@ class _NavigationPageState extends State<NavigationPage> {
             title: Text('Are you sure?'),
             content: Text('Do you want to exit?'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
                 child: Text('No'),
               ),
-              FlatButton(
+              TextButton(
                 onPressed: () =>
                     SystemChannels.platform.invokeMethod('SystemNavigator.pop'),
                 child: Text('Yes'),

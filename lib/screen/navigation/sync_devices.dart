@@ -124,14 +124,14 @@ class _SyncDevicesState extends State<SyncDevices> {
           content: Text(
               "When you press 'Sync' button, BE App will sync your current program with Google Calendar. \n\nPlease keep in mind that, if you change anything in your program, you have to sync your program again."),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 "Cancel",
                 style: TextStyle(fontSize: 17),
               ),
               onPressed: () => Navigator.pop(context),
             ),
-            FlatButton(
+            TextButton(
                 child: Text(
                   "Sync",
                   style: TextStyle(fontSize: 17),
@@ -154,11 +154,11 @@ class _SyncDevicesState extends State<SyncDevices> {
           content: Text(
               "You're already synced. Do you want to sync your device again?"),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("Cancel"),
               onPressed: () => Navigator.pop(context),
             ),
-            FlatButton(
+            TextButton(
               child: Text("Sync Again"),
               onPressed: () {
                 switch (name) {

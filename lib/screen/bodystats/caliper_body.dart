@@ -41,7 +41,7 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
   bool isEdit = true;
 
   successMessage(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Great!",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -97,7 +97,7 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );
@@ -130,12 +130,14 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
   calculateBodyfat() {
     int age = DateTime.now().year - user!.birthday!.year;
     int? gender = user!.gender;
-    bodyfatValue = int.parse(bodystatsDay!.calculateCaliperBodyFat(gender, age));
+    bodyfatValue =
+        int.parse(bodystatsDay!.calculateCaliperBodyFat(gender, age));
   }
 
   @override
   Widget build(BuildContext context) {
-    Map<String, dynamic>? args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
+    Map<String, dynamic>? args =
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
 
     user = Provider.of<UserModel>(context, listen: true).user;
     measurementUnit = user!.unitOfMeasurementId == 1 ? 'mm' : 'in';
@@ -405,7 +407,13 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
                 isEdit
                     ? Padding(
                         padding: const EdgeInsets.symmetric(vertical: 20),
-                        child: RaisedButton(
+                        child: ElevatedButton(
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                            elevation: 5,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5)),
+                          ),
                           onPressed: () async {
                             calculateBodyfat();
                             setState(() {
@@ -424,15 +432,18 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
                                   fontSize: 16),
                             ),
                           ),
-                          color: Color.fromRGBO(8, 112, 138, 1),
-                          elevation: 5,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5)),
                         ),
                       )
                     : Padding(
                         padding: const EdgeInsets.symmetric(vertical: 20),
-                        child: RaisedButton(
+                        child: ElevatedButton(
+                          style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+
+                          ),
                           onPressed: () async {
                             setState(() {
                               showBodyfatValue = false;
@@ -450,10 +461,6 @@ class _CaliperBodyFatPageState extends State<CaliperBodyFatPage> {
                                   fontSize: 16),
                             ),
                           ),
-                          color: Color.fromRGBO(8, 112, 138, 1),
-                          elevation: 5,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5)),
                         ),
                       ),
               ],

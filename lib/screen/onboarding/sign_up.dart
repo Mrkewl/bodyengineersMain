@@ -257,9 +257,13 @@ class _SignUpPageState extends State<SignUpPage> {
                           children: [
                             SizedBox(
                               width: 130,
-                              child: RaisedButton(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                              child: ElevatedButton(
+                                style: TextButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  backgroundColor:
+                                      Color.fromRGBO(58, 145, 247, 1),
                                 ),
                                 onPressed: () async {
                                   await Provider.of<UserModel>(context,
@@ -268,7 +272,6 @@ class _SignUpPageState extends State<SignUpPage> {
                                           success: registerSuccess,
                                           fail: registerFail);
                                 },
-                                color: Color.fromRGBO(58, 145, 247, 1),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
@@ -290,9 +293,13 @@ class _SignUpPageState extends State<SignUpPage> {
                             ),
                             SizedBox(
                               width: 130,
-                              child: RaisedButton(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                              child: ElevatedButton(
+                                style: TextButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  backgroundColor:
+                                      Color.fromRGBO(252, 251, 251, 1),
                                 ),
                                 onPressed: () async {
                                   await Provider.of<UserModel>(context,
@@ -301,7 +308,6 @@ class _SignUpPageState extends State<SignUpPage> {
                                           success: registerSuccess,
                                           fail: registerFail);
                                 },
-                                color: Color.fromRGBO(252, 251, 251, 1),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
@@ -330,7 +336,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     SizedBox(
                       width: double.infinity,
                       height: 50,
-                      child: RaisedButton(
+                      child: ElevatedButton(
                         onPressed: () async {
                           if (_formKey.currentState!.validate()) {
                             var email = _emailController.text;
@@ -359,10 +365,13 @@ class _SignUpPageState extends State<SignUpPage> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 16),
                               ),
-                        color: Color.fromRGBO(86, 177, 191, 1),
+                              style: TextButton.styleFrom(
+                        backgroundColor: Color.fromRGBO(86, 177, 191, 1),
                         elevation: 5,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8)),
+
+                              ),
                       ),
                     ),
                   ],

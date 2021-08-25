@@ -26,7 +26,7 @@ class _AddNewWorkoutState extends State<AddNewWorkout> {
   var _count = 0;
 
   changeWorkoutName(BuildContext context, UserObject? user) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Save",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -148,7 +148,7 @@ class _AddNewWorkoutState extends State<AddNewWorkout> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

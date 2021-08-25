@@ -369,7 +369,7 @@ class _EditProfileInfoState extends State<EditProfileInfo> {
                             SizedBox(
                               width: double.infinity,
                               height: 50,
-                              child: RaisedButton(
+                              child: ElevatedButton(
                                 onPressed: () async {
                                   // // bulk edit //print('GENDER =>' + selectedGenderRadio.toString());
                                   // // bulk edit //print('BIRTHDAY =>' + selectedDate.toString());
@@ -405,10 +405,14 @@ class _EditProfileInfoState extends State<EditProfileInfo> {
                                             fontWeight: FontWeight.bold,
                                             fontSize: 16),
                                       ),
-                                color: Color.fromRGBO(86, 177, 191, 1),
+                                      style: TextButton.styleFrom(
+                                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
                                 elevation: 5,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(5)),
+
+
+                                      ),
                               ),
                             ),
                           ],

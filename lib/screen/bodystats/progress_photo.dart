@@ -258,9 +258,12 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  ),
                   onPressed: () async {
                     String? newPath = await editImage();
                     if (newPath != null) {
@@ -274,16 +277,18 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Add Progress',
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
                 ),
               ),
               SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                  ),
                   onPressed: () async {
                     progressPhoto!.front = null;
                     await Provider.of<PlannerModel>(context, listen: false)
@@ -294,7 +299,6 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Delete Progress',
                     style: TextStyle(color: Colors.black),
                   ),
-                  color: Color.fromRGBO(86, 177, 191, 1),
                 ),
               ),
             ],
@@ -315,9 +319,12 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  ),
                   onPressed: () async {
                     String? newPath = await editImage();
                     if (newPath != null) {
@@ -331,16 +338,18 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Add Progress',
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
                 ),
               ),
               SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                  ),
                   onPressed: () async {
                     progressPhoto!.side = null;
                     await Provider.of<PlannerModel>(context, listen: false)
@@ -351,7 +360,6 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Delete Progress',
                     style: TextStyle(color: Colors.black),
                   ),
-                  color: Color.fromRGBO(86, 177, 191, 1),
                 ),
               ),
             ],
@@ -372,9 +380,12 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  ),
                   onPressed: () async {
                     String? newPath = await editImage();
                     if (newPath != null) {
@@ -388,16 +399,18 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Add Progress',
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
                 ),
               ),
               SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                  ),
                   onPressed: () async {
                     progressPhoto!.back = null;
                     await Provider.of<PlannerModel>(context, listen: false)
@@ -408,7 +421,6 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                     'Delete Progress',
                     style: TextStyle(color: Colors.black),
                   ),
-                  color: Color.fromRGBO(86, 177, 191, 1),
                 ),
               ),
             ],
@@ -515,7 +527,7 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                 ),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     "Select",
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -674,7 +686,7 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                       'Progress Photo',
                       style: TextStyle(fontSize: 20),
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, '/compare-photo');
                       },
@@ -682,9 +694,12 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                         'Compare',
                         style: TextStyle(color: Colors.white),
                       ),
-                      color: Color.fromRGBO(8, 112, 138, 1),
+                      style: TextButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5)),
+
+                      ),
                     ),
                   ],
                 ),

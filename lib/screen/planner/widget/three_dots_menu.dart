@@ -28,13 +28,13 @@ class PopupMenuState extends State<ThreeDotsMenu> {
           content: Text(
               "If you remove this day, you won't be able to reach it again. You can just reschedule it instead of removing. Still do you want to remove it?"),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("Cancel"),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text("Remove"),
               onPressed: () {
                 widget.callbackProgramDay!(widget.programDay, false);

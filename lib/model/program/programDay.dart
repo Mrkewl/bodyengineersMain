@@ -92,7 +92,7 @@ class ProgramDay {
       phaseNumber = json['phaseNumber'];
       isBodyStatsDay = json['isBodyStatsDay'];
       isAddonDay = json['isAddonDay'];
-      ;
+  
       notes = json['notes'];
     } catch (e) {
       // bulk edit //print(e.toString());

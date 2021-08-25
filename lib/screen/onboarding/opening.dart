@@ -164,7 +164,7 @@ class _OpeningPageState extends State<OpeningPage> {
               SizedBox(
                 width: 175,
                 height: 50,
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {
                     _currentPage == 2
                         ? Navigator.pushNamed(context, '/welcome')
@@ -173,7 +173,11 @@ class _OpeningPageState extends State<OpeningPage> {
                             curve: Curves.ease,
                           );
                   },
-                  color: Color.fromRGBO(86, 177, 191, 1),
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                  ),
                   child: Text(
                     'NEXT',
                     style: GoogleFonts.poppins(
@@ -181,8 +185,6 @@ class _OpeningPageState extends State<OpeningPage> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5)),
                 ),
               ),
             ],

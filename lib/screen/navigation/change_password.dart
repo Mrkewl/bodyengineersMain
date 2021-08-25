@@ -206,7 +206,7 @@ class _ChangePasswordState extends State<ChangePassword> {
                             SizedBox(
                               width: double.infinity,
                               height: 50,
-                              child: RaisedButton(
+                              child: ElevatedButton(
                                 onPressed: () async {
                                   if (_formKey.currentState!.validate()) {
                                     // bulk edit //print('TEST TEST TEST');
@@ -225,10 +225,13 @@ class _ChangePasswordState extends State<ChangePassword> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16),
                                 ),
-                                color: Color.fromRGBO(86, 177, 191, 1),
+                                style: TextButton.styleFrom(
+                                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
                                 elevation: 5,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(5)),
+
+                                ),
                               ),
                             ),
                           ],

@@ -32,11 +32,11 @@ class _WorkoutSlideableElementState extends State<WorkoutSlideableElement> {
   MyTheme theme = MyTheme();
 
   changeSets(BuildContext context) {
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text("Cancel"),
       onPressed: () => Navigator.pop(context),
     );
-    Widget saveButton = FlatButton(
+    Widget saveButton = TextButton(
       child: Text("Save"),
       onPressed: () {
         widget.changeWorkoutCallback!(widget.workout!.workoutId, widget.workout);
@@ -80,7 +80,7 @@ class _WorkoutSlideableElementState extends State<WorkoutSlideableElement> {
   }
 
   changeReps(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Save",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -91,7 +91,7 @@ class _WorkoutSlideableElementState extends State<WorkoutSlideableElement> {
         Navigator.pop(context);
       },
     );
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         "Cancel",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -147,7 +147,7 @@ class _WorkoutSlideableElementState extends State<WorkoutSlideableElement> {
   }
 
   changeKg(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Save",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -156,7 +156,7 @@ class _WorkoutSlideableElementState extends State<WorkoutSlideableElement> {
         Navigator.pop(context);
       },
     );
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         "Cancel",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

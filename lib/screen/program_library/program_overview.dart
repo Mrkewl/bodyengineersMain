@@ -64,7 +64,7 @@ class _ProgramOverviewState extends State<ProgramOverview> {
   }
 
   overwritePopup(BuildContext context, UserObject? user, String? programId) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('yes_overwrite')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1), fontSize: 16),
@@ -79,7 +79,7 @@ class _ProgramOverviewState extends State<ProgramOverview> {
             arguments: {'programId': programId});
       },
     );
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         allTranslations.text('cancel')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1), fontSize: 16),

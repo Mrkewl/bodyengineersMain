@@ -192,17 +192,19 @@ class ProfileState extends State<Profile> {
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Row(
                             children: [
-                              RaisedButton(
+                              ElevatedButton(
                                 onPressed: () {
                                   setState(() {
                                     isAll = true;
                                   });
                                 },
-                                color: isAll
-                                    ? Color.fromRGBO(86, 177, 191, 1)
-                                    : Colors.grey[400],
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
+                                style: TextButton.styleFrom(
+                                  backgroundColor: isAll
+                                      ? Color.fromRGBO(86, 177, 191, 1)
+                                      : Colors.grey[400],
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
                                 ),
                                 child: Text(
                                   allTranslations.text('all')!,
@@ -213,17 +215,19 @@ class ProfileState extends State<Profile> {
                                 ),
                               ),
                               SizedBox(width: 10),
-                              RaisedButton(
+                              ElevatedButton(
                                 onPressed: () {
                                   setState(() {
                                     isAll = false;
                                   });
                                 },
-                                color: isAll
-                                    ? Colors.grey[400]
-                                    : Color.fromRGBO(86, 177, 191, 1),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
+                                style: TextButton.styleFrom(
+                                  backgroundColor: isAll
+                                      ? Colors.grey[400]
+                                      : Color.fromRGBO(86, 177, 191, 1),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
                                 ),
                                 child: Text(
                                   allTranslations.text('mutual')!,
@@ -613,7 +617,7 @@ class ProfileState extends State<Profile> {
                     children: [
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.35,
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () async {
                             if (user != null) {
                               if (!user!.isGeneralInfoFilled!) {
@@ -625,8 +629,11 @@ class ProfileState extends State<Profile> {
                               }
                             }
                           },
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0),
+                          style: TextButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            backgroundColor: Color.fromRGBO(8, 112, 138, 1),
                           ),
                           child: Text(
                             allTranslations.text('edit')!,
@@ -635,12 +642,11 @@ class ProfileState extends State<Profile> {
                               color: Colors.white,
                             ),
                           ),
-                          color: Color.fromRGBO(8, 112, 138, 1),
                         ),
                       ),
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.35,
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             _showFriendsModalBottomSheet(context);
                           },
@@ -651,14 +657,17 @@ class ProfileState extends State<Profile> {
                               color: Colors.black,
                             ),
                           ),
-                          color: Colors.white,
-                          textColor: Colors.black,
+                          style: TextButton.styleFrom(
+                          backgroundColor: Colors.white,
+                            textStyle: TextStyle(color: Colors.black),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                             side: BorderSide(
                               color: Color.fromRGBO(86, 177, 191, 1),
                               width: 2,
                             ),
+                          ),
+
                           ),
                         ),
                       ),

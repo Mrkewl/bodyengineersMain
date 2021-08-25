@@ -129,7 +129,7 @@ class _WorkoutLogState extends State<WorkoutLog> {
             ],
           ),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 "Thanks!",
                 style: TextStyle(
@@ -217,11 +217,11 @@ class _WorkoutLogState extends State<WorkoutLog> {
   }
 
   selectTimerDialog(BuildContext context) {
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text("Cancel"),
       onPressed: () => Navigator.pop(context),
     );
-    Widget saveButton = FlatButton(
+    Widget saveButton = TextButton(
         child: Text("Save"),
         onPressed: () {
           Navigator.pop(context);
@@ -267,7 +267,7 @@ class _WorkoutLogState extends State<WorkoutLog> {
   }
 
   startTimerDialog(BuildContext context) {
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         "Dismiss",
         style: TextStyle(color: Colors.black),
@@ -358,7 +358,7 @@ class _WorkoutLogState extends State<WorkoutLog> {
 
 6. You can substitute, remove or add exercises in this plan'''),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("OK"),
               onPressed: () => Navigator.pop(context),
             ),

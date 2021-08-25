@@ -51,7 +51,7 @@ class _NewProgramState extends State<NewProgram> with TickerProviderStateMixin {
   };
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

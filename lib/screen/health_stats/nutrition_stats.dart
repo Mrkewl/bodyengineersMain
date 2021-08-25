@@ -84,12 +84,15 @@ class _NutritionStatsState extends State<NutritionStats> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Calories'),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () =>
                         Navigator.pushNamed(context, '/calorie_goals_menu'),
+                        style: TextButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)),
-                    color: Color.fromRGBO(8, 112, 138, 1),
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+
+                        ),
                     child: Text(
                       'Goals',
                       style: TextStyle(

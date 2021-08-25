@@ -145,7 +145,7 @@ class _SleepStatsState extends State<SleepStats> with TickerProviderStateMixin {
                 ),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     "Select",
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

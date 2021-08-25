@@ -166,7 +166,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 child: SizedBox(
                   width: double.infinity,
                   height: 50,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () async {
                       await Provider.of<UserModel>(context, listen: false)
                           .forgotPassword(
@@ -183,10 +183,12 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16),
                           ),
-                    color: Color.fromRGBO(86, 177, 191, 1),
-                    elevation: 5,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                      elevation: 5,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5)),
+                    ),
                   ),
                 ),
               ),

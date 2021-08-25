@@ -202,7 +202,7 @@ class BodystatsElement extends StatelessWidget {
           title: Text("Delete Bodystats"),
           content: Text('Are you sure to delete bodystats?'),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 "Cancel",
                 style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -211,7 +211,7 @@ class BodystatsElement extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text(
                 "Delete",
                 style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),

@@ -61,7 +61,7 @@ class _PlannerState extends State<Planner> with TickerProviderStateMixin {
                 ),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     allTranslations.text('select')!,
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -194,14 +194,14 @@ class _PlannerState extends State<Planner> with TickerProviderStateMixin {
                 ],
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     "Cancel",
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
                   ),
                   onPressed: () => Navigator.pop(context),
                 ),
-                FlatButton(
+                TextButton(
                   child: Text(
                     "Reschedule",
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -334,7 +334,7 @@ class _PlannerState extends State<Planner> with TickerProviderStateMixin {
   }
 
   postponeDialog(BuildContext context) {
-    Widget saveButton = FlatButton(
+    Widget saveButton = TextButton(
       child: Text(
         "Postpone!",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -351,7 +351,7 @@ class _PlannerState extends State<Planner> with TickerProviderStateMixin {
         // bulk edit //print(_postponeDayController.text);
       },
     );
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         "Cancel",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -401,7 +401,7 @@ class _PlannerState extends State<Planner> with TickerProviderStateMixin {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

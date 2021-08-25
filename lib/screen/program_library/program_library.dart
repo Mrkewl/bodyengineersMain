@@ -22,7 +22,7 @@ class _ProgramLibraryState extends State<ProgramLibrary> {
       title: Text(allTranslations.text('create_new_program')!),
       content: Text(allTranslations.text('already_program')!),
       actions: [
-        FlatButton(
+        TextButton(
           child: Text(
             allTranslations.text('cancel')!,
             style:
@@ -32,7 +32,7 @@ class _ProgramLibraryState extends State<ProgramLibrary> {
             Navigator.pop(context);
           },
         ),
-        FlatButton(
+        TextButton(
           child: Text(
             allTranslations.text('yes_overwrite')!,
             style:
@@ -68,7 +68,7 @@ class _ProgramLibraryState extends State<ProgramLibrary> {
           content: Text(
               "BodyEngineers Blueprint feature is currently under Development."),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("OK"),
               onPressed: () => Navigator.pop(context),
             ),
@@ -88,7 +88,7 @@ class _ProgramLibraryState extends State<ProgramLibrary> {
           content: Text(
               "Program Library contains many workout programs to get you started on your fitness journey."),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("OK"),
               onPressed: () => Navigator.pop(context),
             ),

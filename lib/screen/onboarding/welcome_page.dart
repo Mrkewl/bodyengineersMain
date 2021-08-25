@@ -90,7 +90,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: SizedBox(
                           width: double.infinity,
                           height: 50,
-                          child: RaisedButton(
+                          child: ElevatedButton(
                             onPressed: () => Navigator.of(context).push(
                                 MaterialPageRoute(
                                     builder: (BuildContext ctx) =>
@@ -102,10 +102,12 @@ class _WelcomePageState extends State<WelcomePage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16),
                             ),
-                            color: Color.fromRGBO(8, 112, 138, 1),
-                            elevation: 5,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5)),
+                            style: TextButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                              elevation: 5,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5)),
+                            ),
                           ),
                         ),
                       ),
@@ -114,7 +116,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: SizedBox(
                           width: double.infinity,
                           height: 50,
-                          child: RaisedButton(
+                          child: ElevatedButton(
                             onPressed: () => Navigator.of(context).push(
                                 MaterialPageRoute(
                                     builder: (BuildContext ctx) =>
@@ -126,10 +128,12 @@ class _WelcomePageState extends State<WelcomePage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16),
                             ),
-                            color: Color.fromRGBO(8, 112, 138, 1),
-                            elevation: 5,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5)),
+                            style: TextButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                              elevation: 5,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5)),
+                            ),
                           ),
                         ),
                       ),

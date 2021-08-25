@@ -26,7 +26,7 @@ class _EditProfileState extends State<EditProfile> {
 
   changeBio(BuildContext context, UserObject user) {
     _bioController.text = user.bio!;
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('save')!,
         style: TextStyle(fontSize: 14, color: Color.fromRGBO(8, 112, 138, 1)),
@@ -71,7 +71,7 @@ class _EditProfileState extends State<EditProfile> {
         ],
       ),
       actions: [
-        FlatButton(
+        TextButton(
           onPressed: () {
             Navigator.pop(context);
           },
@@ -148,15 +148,18 @@ class _EditProfileState extends State<EditProfile> {
                 ],
               )),
               actions: [
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   child: Text(
                     allTranslations.text('cancel')!,
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(86, 177, 191, 1),
+                  style: TextButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+
+                  ),
                 ),
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {
                     Provider.of<UserModel>(context, listen: false)
                         .resetPassword();
@@ -166,7 +169,10 @@ class _EditProfileState extends State<EditProfile> {
                     allTranslations.text('reset')!,
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
+                  style: TextButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+
+                  ),
                 ),
               ],
             ));
@@ -364,14 +370,17 @@ class _EditProfileState extends State<EditProfile> {
                 ],
               ),
               actions: [
-                RaisedButton(
+                ElevatedButton(
                   onPressed: () {
                     Provider.of<UserModel>(context, listen: false)
                         .setPrivacy(user!.userPrivacy);
                     Navigator.pop(context);
                   },
                   child: Text(allTranslations.text('save')!),
-                  color: Color.fromRGBO(8, 112, 138, 1),
+                  style: TextButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+
+                  ),
                 ),
               ],
             );
@@ -535,7 +544,7 @@ class _EditProfileState extends State<EditProfile> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      FlatButton(
+                      TextButton(
                         onPressed: () => resetPasswordDialog(),
                         child: Text(
                           allTranslations.text('reset_password')!,

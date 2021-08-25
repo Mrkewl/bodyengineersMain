@@ -103,7 +103,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     animationController: _animationController),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     "Select",
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -225,7 +225,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );
@@ -364,16 +364,20 @@ class _DashboardScreenState extends State<DashboardScreen>
                       allTranslations.text('dashboard')!.toUpperCase(),
                       style: TextStyle(fontSize: 20),
                     ),
-                    RaisedButton(
-                      onPressed: () =>
-                          Navigator.pushNamed(context, '/set_goals'),
+                    ElevatedButton(
+                      style: TextButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8)),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+
+
+                      ),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, '/set_goals'),
                       child: Text(
                         allTranslations.text('set_goals')!,
                         style: TextStyle(color: Colors.white),
                       ),
-                      color: Color.fromRGBO(8, 112, 138, 1),
                     )
                   ],
                 ),

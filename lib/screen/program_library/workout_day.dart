@@ -126,11 +126,11 @@ class _WorkoutDayState extends State<WorkoutDay> {
   }
 
   selectTimerDialog(BuildContext context) {
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text("Cancel"),
       onPressed: () => Navigator.pop(context),
     );
-    Widget saveButton = FlatButton(
+    Widget saveButton = TextButton(
         child: Text("Save"),
         onPressed: () {
           Navigator.pop(context);
@@ -176,7 +176,7 @@ class _WorkoutDayState extends State<WorkoutDay> {
   }
 
   startTimerDialog(BuildContext context) {
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         "Dismiss",
         style: TextStyle(color: Colors.black),
@@ -291,7 +291,7 @@ class _WorkoutDayState extends State<WorkoutDay> {
   }
 
   successPopup(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Thanks!",
         style: TextStyle(
@@ -342,7 +342,7 @@ class _WorkoutDayState extends State<WorkoutDay> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

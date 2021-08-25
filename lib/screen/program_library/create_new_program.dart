@@ -231,7 +231,7 @@ class _CreateNewProgramState extends State<CreateNewProgram> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

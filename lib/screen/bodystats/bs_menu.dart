@@ -202,9 +202,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
             SizedBox(
               width: double.infinity,
               height: 40,
-              child: RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+              child: ElevatedButton(
+                style: TextButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                ),
                 onPressed: () {
                   Navigator.pop(context);
                   addBodyWeight(context);
@@ -213,7 +216,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                   allTranslations.text('add_bodyweight')!,
                   style: TextStyle(color: Colors.white),
                 ),
-                color: Color.fromRGBO(8, 112, 138, 1),
               ),
             ),
           if (bodystatsDay!.isInitialBodyStat)
@@ -225,9 +227,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/body_weight');
@@ -236,7 +241,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('see_bodyweight_history')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(86, 177, 191, 1),
             ),
           ),
         ],
@@ -260,9 +264,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
             SizedBox(
               width: double.infinity,
               height: 40,
-              child: RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+              child: ElevatedButton(
+                style: TextButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                ),
                 onPressed: () {
                   Navigator.pop(context);
                   addBodyfat(context);
@@ -271,7 +278,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                   allTranslations.text('add_bodyfat')!,
                   style: TextStyle(color: Colors.white),
                 ),
-                color: Color.fromRGBO(8, 112, 138, 1),
               ),
             ),
           if (bodystatsDay!.isInitialBodyStat)
@@ -283,9 +289,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/bodyfat');
@@ -294,7 +303,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('see_bodyfat_history')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(86, 177, 191, 1),
             ),
           ),
         ],
@@ -317,9 +325,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/caliper_bodyfat', arguments: {
@@ -331,16 +342,18 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('add_caliper')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(8, 112, 138, 1),
             ),
           ),
           SizedBox(height: 20),
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/caliper_history');
@@ -349,7 +362,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('see_caliper_history')!,
                 style: TextStyle(color: Colors.black),
               ),
-              color: Color.fromRGBO(86, 177, 191, 1),
             ),
           ),
         ],
@@ -372,9 +384,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/body_measurement', arguments: {
@@ -386,16 +401,18 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('add_body_measurement')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(8, 112, 138, 1),
             ),
           ),
           SizedBox(height: 20),
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/body_measurement_history');
@@ -404,7 +421,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('see_body_measurement_history')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(86, 177, 191, 1),
             ),
           ),
         ],
@@ -427,9 +443,12 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/progress_photo',
@@ -439,16 +458,18 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('add_progress')!,
                 style: TextStyle(color: Colors.white),
               ),
-              color: Color.fromRGBO(8, 112, 138, 1),
             ),
           ),
           SizedBox(height: 20),
           SizedBox(
             width: double.infinity,
             height: 40,
-            child: RaisedButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+            child: ElevatedButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+              ),
               onPressed: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/progress_photo_history');
@@ -457,7 +478,6 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
                 allTranslations.text('see_progress_history')!,
                 style: TextStyle(color: Colors.black),
               ),
-              color: Color.fromRGBO(86, 177, 191, 1),
             ),
           ),
         ],
@@ -473,7 +493,7 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
   }
 
   weightSuccessMessage(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Great!",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -500,7 +520,7 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
   }
 
   fatSuccessMessage(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         "Great!",
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -527,7 +547,7 @@ class _BodyStatsMenuState extends State<BodyStatsMenu> {
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );

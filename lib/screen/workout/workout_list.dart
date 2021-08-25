@@ -143,7 +143,7 @@ class _WorkoutListState extends State<WorkoutList>
   }
 
   showAlertDialog(BuildContext context) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () => Navigator.pop(context),
     );
@@ -249,7 +249,7 @@ you are able to access the weeks and phases in your program
   }
 
   deletePopup(BuildContext context, UserObject? user, String? programId) {
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text(
         allTranslations.text('delete')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1), fontSize: 16),
@@ -269,7 +269,7 @@ you are able to access the weeks and phases in your program
         Navigator.pop(context);
       },
     );
-    Widget cancelButton = FlatButton(
+    Widget cancelButton = TextButton(
       child: Text(
         allTranslations.text('cancel')!,
         style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1), fontSize: 16),
@@ -304,7 +304,7 @@ you are able to access the weeks and phases in your program
           title: Text(allTranslations.text('delete_workout_day')!),
           content: Text(allTranslations.text('delete_workout_day_question')!),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 allTranslations.text('cancel')!,
                 style: TextStyle(
@@ -314,7 +314,7 @@ you are able to access the weeks and phases in your program
                 Navigator.pop(context);
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text(
                 allTranslations.text('delete')!,
                 style: TextStyle(
@@ -398,7 +398,7 @@ you are able to access the weeks and phases in your program
                     animationController: _animationController,
                   )),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     allTranslations.text('select')!,
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
@@ -438,7 +438,7 @@ you are able to access the weeks and phases in your program
                 ),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text(
                     allTranslations.text('select')!,
                     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1)),
