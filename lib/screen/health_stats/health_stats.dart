@@ -6,7 +6,6 @@ import '../../model/planner/measurement.dart';
 import '../../model/planner/planner_model.dart';
 import '../../model/user/user.dart';
 import '../../model/user/user_model.dart';
-import '../../model/watch/garmin.dart';
 import '../../model/watch/watch_model.dart';
 import '../../screen/health_stats/widget/bar_widget.dart';
 import '../../screen/health_stats/widget/bodyfat_stat_chats.dart';
@@ -15,7 +14,6 @@ import '../../screen/health_stats/widget/resting_heart_stat_charts.dart';
 import '../../screen/health_stats/widget/sleep_stat_charts.dart';
 import '../../screen/health_stats/widget/step_stat_charts.dart';
 import '../../screen/health_stats/widget/total_daily_energy.dart';
-import '../../screen/health_stats/widget/vo2max_stat_charts.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

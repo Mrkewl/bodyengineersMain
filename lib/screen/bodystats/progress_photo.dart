@@ -153,7 +153,6 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                 ),
               );
             }
-            break;
           case 1:
             if (frontImage == null) {
               return GestureDetector(
@@ -196,7 +195,6 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                 ),
               );
             }
-            break;
           case 2:
             if (sideImage == null) {
               return GestureDetector(
@@ -238,8 +236,7 @@ class _ProgressPhotoPageState extends State<ProgressPhotoPage>
                   ],
                 ),
               );
-            }
-            break;
+            }   
           default:
             return Container();
         }

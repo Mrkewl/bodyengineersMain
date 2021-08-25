@@ -4,7 +4,6 @@ import 'package:bodyengineer/screen/widget/youtube_video.dart';
 
 import '../../../model/planner/exercise_history.dart';
 import '../../../model/planner/planner_model.dart';
-import '../../../screen/video_tutorial/video_player.dart';
 import 'package:chewie/chewie.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ import 'package:intl/intl.dart' as intl;
 import 'dart:math';
 import 'package:video_player/video_player.dart' as video;
 import 'package:provider/provider.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import '../../model/user/user.dart';
 import '../../model/user/user_model.dart';
@@ -458,9 +456,12 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
                           left: 10,
                           bottom: 15,
                         ),
-                        child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                        child: ElevatedButton(
+                          style: TextButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            backgroundColor: Colors.red.shade700,
+                          ),
                           child: Text(
                             'Delete Custom Exercise',
                             style: TextStyle(
@@ -469,7 +470,6 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
                             ),
                           ),
                           onPressed: () => warnMessage(context),
-                          color: Colors.red.shade700,
                         )),
                   ),
                 ),

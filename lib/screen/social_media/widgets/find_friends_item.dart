@@ -69,7 +69,7 @@ class FindFriendsItem extends StatelessWidget {
               ),
             ),
             if (user!.uid != currentUser!.uid)
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   if (currentUser!.friendList
                       .where((element) => element?.uid == user!.uid)
@@ -85,9 +85,11 @@ class FindFriendsItem extends StatelessWidget {
                         .unfollowFriend(uid: user!.uid);
                   }
                 },
-                color: Color.fromRGBO(8, 112, 138, 1),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
+                style: TextButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
                 ),
                 child: Text(
                   currentUser!.friendList

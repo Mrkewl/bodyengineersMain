@@ -13,17 +13,15 @@ import '../../../model/planner/measurement.dart';
 import '../../../model/program/exercise.dart';
 import '../../../model/user/user.dart';
 import '../../../model/user/user_model.dart';
-import '../../../model/watch/fitbit.dart';
-import '../../../model/watch/garmin.dart';
-import '../../../model/watch/polar.dart';
+
 import '../../../model/watch/watch_model.dart';
-import '../../../screen/dashboard/goals/widgets/goal_progress_bar.dart';
+
 import '../../../screen/dashboard/widget/day_item.dart';
 import '../../../screen/dashboard/widget/watch_data.dart';
 import '../../../screen/widget/calendar/calendar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:intl/intl.dart';
+
 
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

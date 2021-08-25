@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 import 'package:provider/provider.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import '../../model/user/user.dart';
 import '../../model/user/user_model.dart';
@@ -153,14 +152,16 @@ class _ProgramOverviewState extends State<ProgramOverview> {
                       allTranslations.text('overview')!,
                       style: TextStyle(fontSize: 22),
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () {
                         Navigator.pushNamed(context, '/program_details',
                             arguments: {'programId': program.programId});
                       },
-                      color: Colors.black,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                       ),
                       child: Text(
                         allTranslations.text('details')!,
@@ -169,7 +170,7 @@ class _ProgramOverviewState extends State<ProgramOverview> {
                         ),
                       ),
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () async {
                         int? stars = await showDialog(
                             context: context,
@@ -185,9 +186,11 @@ class _ProgramOverviewState extends State<ProgramOverview> {
                                 rate: stars.toDouble(),
                                 programId: program.programId);
                       },
-                      color: Colors.black,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                       ),
                       child: Text(
                         allTranslations.text('rate_it')!,
@@ -484,8 +487,11 @@ class _ProgramOverviewState extends State<ProgramOverview> {
                       ),
                     ),
                   ),
-                  RaisedButton(
-                    padding: EdgeInsets.all(15),
+                  ElevatedButton(
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.all(15),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     onPressed: () {
                       if (Provider.of<PlannerModel>(context, listen: false)
                           .programDayList
@@ -496,7 +502,6 @@ class _ProgramOverviewState extends State<ProgramOverview> {
                             arguments: {'programId': program.programId});
                       }
                     },
-                    color: Color.fromRGBO(8, 112, 138, 1),
                     child: Text(
                       allTranslations.text('add_program')!.toUpperCase(),
                       style: TextStyle(

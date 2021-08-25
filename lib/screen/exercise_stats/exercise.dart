@@ -1,4 +1,4 @@
-import 'package:bodyengineer/model/program/equipment.dart';
+
 
 import '../../model/planner/exercise_history.dart';
 import '../../model/planner/planner_model.dart';

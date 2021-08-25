@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ffi';
 import 'dart:io';
 
 import 'package:bodyengineer/model/program/program.dart';
@@ -116,38 +115,6 @@ class _NavigationPageState extends State<NavigationPage> {
 
   int? _index = 0;
 
-  // subscribeProgramPopup(BuildContext ctx) {
-  // Widget okButton = FlatButton(
-  //   child: Text(
-  //     "Go to Program Library",
-  //     style: TextStyle(color: Color.fromRGBO(8, 112, 138, 1), fontSize: 16),
-  //   ),
-  //   onPressed: () {
-  //     setState(() {
-  //       _index = 2;
-  //       Navigator.pop(context);
-  //     });
-  //   },
-  // );
-
-  // AlertDialog alert = AlertDialog(
-  //   title: Text("Welcome"),
-  //   content: Text(
-  //       'Welcome to BodyEngineers App. In order to use application, please go to Program Library and add a program to your planner.'),
-  //   actions: [
-  //     okButton,
-  //   ],
-  // );
-
-  //   showDialog(
-  //     barrierDismissible: false,
-  //     context: ctx,
-  //     builder: (BuildContext context) {
-  //       return alert;
-  //     },
-  //   ).whenComplete(() => Provider.of<PlannerModel>(context, listen: false)
-  //       .makeSubscribeWarningTrue());
-  // }
 
   final List<Widget> _pages = [
     // Feed(),

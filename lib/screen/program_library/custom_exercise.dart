@@ -8,7 +8,6 @@ import '../../model/program/movement.dart';
 import '../../model/program/muscle.dart';
 import 'package:flutter_document_picker/flutter_document_picker.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:smart_select/smart_select.dart';
 
 import '../../model/user/user.dart';
 import '../../model/user/user_model.dart';
@@ -458,12 +457,15 @@ class _AddCustomExerciseState extends State<AddCustomExercise> {
                         Container(
                           margin: EdgeInsets.only(top: 30),
                           width: MediaQuery.of(context).size.width,
-                          child: RaisedButton(
+                          child: ElevatedButton(
+                            style: TextButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(7)),
                             padding: EdgeInsets.all(20),
+                            backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+
+                            ),
                             onPressed: createExercise,
-                            color: Color.fromRGBO(8, 112, 138, 1),
                             child: Text(
                               'Save',
                               style: TextStyle(

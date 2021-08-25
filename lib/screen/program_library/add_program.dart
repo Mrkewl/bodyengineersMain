@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -476,9 +475,11 @@ class _AddProgramState extends State<AddProgram> {
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height * 0.075,
                 child: remainingDays! > 0
-                    ? RaisedButton(
+                    ? ElevatedButton(
                         onPressed: () {},
-                        color: Color.fromRGBO(8, 112, 138, 1),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                        ),
                         child: Text(
                           allTranslations.text('please_select')! +
                               ' ' +
@@ -488,9 +489,11 @@ class _AddProgramState extends State<AddProgram> {
                           style: TextStyle(color: Colors.white),
                         ),
                       )
-                    : RaisedButton(
+                    : ElevatedButton(
                         onPressed: addProgramConfirm,
-                        color: Color.fromRGBO(8, 112, 138, 1),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                        ),
                         child: isLoading
                             ? CircularProgressIndicator()
                             : Text(

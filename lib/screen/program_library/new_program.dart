@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'package:table_calendar/table_calendar.dart';
 import 'package:provider/provider.dart';
 
 import '../../model/user/user.dart';
@@ -451,7 +450,7 @@ class _NewProgramState extends State<NewProgram> with TickerProviderStateMixin {
                                 width: MediaQuery.of(context).size.width * 0.6,
                                 height:
                                     MediaQuery.of(context).size.height * 0.075,
-                                child: RaisedButton(
+                                child: ElevatedButton(
                                   onPressed: () async {
                                     setState(() {
                                       isLoading = true;
@@ -497,7 +496,10 @@ class _NewProgramState extends State<NewProgram> with TickerProviderStateMixin {
                                       });
                                     }
                                   },
-                                  color: Color.fromRGBO(8, 112, 138, 1),
+                                  style: TextButton.styleFrom(
+                                    backgroundColor:
+                                        Color.fromRGBO(8, 112, 138, 1),
+                                  ),
                                   child: !isLoading
                                       ? Text(
                                           allTranslations

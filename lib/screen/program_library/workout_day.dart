@@ -547,8 +547,11 @@ class _WorkoutDayState extends State<WorkoutDay> {
                 Divider(thickness: 2),
                 Visibility(
                   visible: isEdit! ? true : false,
-                  child: RaisedButton(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: ElevatedButton(
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     onPressed: () async {
                       if (!isEdit! && programDay!.isDayCompleted) {
                         editProgramDay();
@@ -556,7 +559,6 @@ class _WorkoutDayState extends State<WorkoutDay> {
                         successPopup(context);
                       }
                     },
-                    color: Color.fromRGBO(8, 112, 138, 1),
                     child: Text(
                       allTranslations.text('save_workout')!,
                       style: TextStyle(

@@ -1,7 +1,6 @@
 import 'package:bodyengineer/model/watch/watch_data.dart';
 
 import '../../model/program/workout.dart';
-import '../../model/watch/garmin.dart';
 import '../../model/watch/watch_model.dart';
 import '../../screen/health_stats/widget/detail/resting_heart_detail_stat.dart';
 import '../../screen/health_stats/widget/general/listview_element_healthstat_detail.dart';

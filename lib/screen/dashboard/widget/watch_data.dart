@@ -1,8 +1,6 @@
 import 'package:bodyengineer/model/watch/watch_data.dart';
 
-import '../../../../model/watch/fitbit.dart';
-import '../../../../model/watch/garmin.dart';
-import '../../../../model/watch/polar.dart';
+
 import '../../../../screen/dashboard/goals/widgets/goal_progress_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' as intl;

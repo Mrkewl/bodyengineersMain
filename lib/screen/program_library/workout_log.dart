@@ -586,12 +586,11 @@ class _WorkoutLogState extends State<WorkoutLog> {
                           ? false
                           : true,
                   child: ElevatedButton(
-                    
                     style: TextButton.styleFrom(
-                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))
-                    ),
+                        backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10))),
                     onPressed: () {
                       Navigator.pushNamed(context, '/workout_day', arguments: {
                         'programDay': programDay,
@@ -616,8 +615,11 @@ class _WorkoutLogState extends State<WorkoutLog> {
                       : programDay!.isDayCompleted && isEdit!
                           ? true
                           : false,
-                  child: RaisedButton(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: ElevatedButton(
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     onPressed: () async {
                       if (!isEdit! &&
                           programDay!.isDayCompleted &&
@@ -633,7 +635,6 @@ class _WorkoutLogState extends State<WorkoutLog> {
                             arguments: {'index': navigateIndex});
                       }
                     },
-                    color: Color.fromRGBO(8, 112, 138, 1),
                     child: Text(
                       allTranslations.text('save_workout')!,
                       style: TextStyle(

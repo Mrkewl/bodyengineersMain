@@ -4,8 +4,7 @@ import 'package:bodyengineer/model/planner/planner_model.dart';
 import '../../model/user/user_model.dart';
 import '../../model/watch/watch_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:lottie/lottie.dart';
+
 import 'package:provider/provider.dart';
 import 'package:transparent_image/transparent_image.dart';
 

@@ -8,10 +8,9 @@ import '../../model/user/user_model.dart';
 import '../../screen/widget/achievement_modal_content.dart';
 import '../../screen/widget/calendar/calendar_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+
 
 import 'package:provider/provider.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 import '../../translations.dart';
 import './widget/planner_day_item.dart';

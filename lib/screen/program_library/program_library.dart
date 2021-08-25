@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../be_theme.dart';
-import '../../model/program/program_model.dart';
 import '../../model/user/user.dart';
 import '../../model/user/user_model.dart';
 import '../../model/planner/planner_model.dart';

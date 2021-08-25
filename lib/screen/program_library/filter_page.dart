@@ -307,8 +307,12 @@ class _FilterPageState extends State<FilterPage> {
               Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: RaisedButton(
-                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                  child: ElevatedButton(
+                    style: TextButton.styleFrom(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     onPressed: () {
                       String? categoryId;
                       if (subCategories
@@ -360,7 +364,6 @@ class _FilterPageState extends State<FilterPage> {
                             'duration': maxDuration,
                           });
                     },
-                    color: Color.fromRGBO(8, 112, 138, 1),
                     child: Text(
                       allTranslations.text('search')!.toUpperCase(),
                       style: TextStyle(

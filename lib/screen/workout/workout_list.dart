@@ -343,7 +343,7 @@ you are able to access the weeks and phases in your program
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                     Navigator.pushNamed(context, '/workout_log', arguments: {
@@ -356,14 +356,19 @@ you are able to access the weeks and phases in your program
                     allTranslations.text('edit_workout')!,
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  ),
                 ),
               ),
               SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
+                child: ElevatedButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                  ),
                   onPressed: () {
                     Navigator.pop(context);
                     deleteWorkoutDayDialog(context, programDay);
@@ -372,7 +377,6 @@ you are able to access the weeks and phases in your program
                     allTranslations.text('delete_workout')!,
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Color.fromRGBO(8, 112, 138, 1),
                 ),
               ),
             ],

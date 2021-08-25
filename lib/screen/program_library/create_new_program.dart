@@ -613,7 +613,7 @@ class _CreateNewProgramState extends State<CreateNewProgram> {
                 child: SizedBox(
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * 0.075,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () async {
                       // // bulk edit //print('Duration ==>' + _duration.round().toString());
                       // // bulk edit //print('Phases ==>' + _phases.round().toString());
@@ -647,7 +647,9 @@ class _CreateNewProgramState extends State<CreateNewProgram> {
                             });
                       }
                     },
-                    color: Color.fromRGBO(8, 112, 138, 1),
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     child: Text(
                       valid || validDays
                           ? allTranslations.text('confirm')!

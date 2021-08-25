@@ -1,6 +1,5 @@
 import 'package:bodyengineer/model/watch/watch_data.dart';
 
-import '../../../../model/watch/garmin.dart';
 import '../../../../screen/health_stats/widget/chart_data.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:intl/intl.dart';
