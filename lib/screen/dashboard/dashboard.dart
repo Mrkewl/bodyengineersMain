@@ -366,11 +366,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                     ),
                     ElevatedButton(
                       style: TextButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)),
-                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
-
-
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)),
+                        backgroundColor: Color.fromRGBO(8, 112, 138, 1),
                       ),
                       onPressed: () =>
                           Navigator.pushNamed(context, '/set_goals'),

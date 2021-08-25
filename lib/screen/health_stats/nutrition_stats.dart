@@ -87,12 +87,11 @@ class _NutritionStatsState extends State<NutritionStats> {
                   ElevatedButton(
                     onPressed: () =>
                         Navigator.pushNamed(context, '/calorie_goals_menu'),
-                        style: TextButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                    backgroundColor: Color.fromRGBO(8, 112, 138, 1),
-
-                        ),
+                    style: TextButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      backgroundColor: Color.fromRGBO(8, 112, 138, 1),
+                    ),
                     child: Text(
                       'Goals',
                       style: TextStyle(

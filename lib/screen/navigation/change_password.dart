@@ -226,11 +226,11 @@ class _ChangePasswordState extends State<ChangePassword> {
                                       fontSize: 16),
                                 ),
                                 style: TextButton.styleFrom(
-                                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
-                                elevation: 5,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5)),
-
+                                  backgroundColor:
+                                      Color.fromRGBO(86, 177, 191, 1),
+                                  elevation: 5,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(5)),
                                 ),
                               ),
                             ),

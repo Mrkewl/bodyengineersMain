@@ -278,9 +278,10 @@ class _EditProfileInfoState extends State<EditProfileInfo> {
                                   children: [
                                     Text('Country/Region'),
                                     DropdownButtonFormField(
-                                      validator: (dynamic value) => value == null
-                                          ? 'This field is required'
-                                          : null,
+                                      validator: (dynamic value) =>
+                                          value == null
+                                              ? 'This field is required'
+                                              : null,
                                       items: listCountry!
                                           .map<DropdownMenuItem<Country>>(
                                               (Country value) {
@@ -330,9 +331,10 @@ class _EditProfileInfoState extends State<EditProfileInfo> {
                                   children: [
                                     Text('State'),
                                     DropdownButtonFormField(
-                                      validator: (dynamic value) => value == null
-                                          ? 'This field is required'
-                                          : null,
+                                      validator: (dynamic value) =>
+                                          value == null
+                                              ? 'This field is required'
+                                              : null,
                                       items: listRegion
                                           .map<DropdownMenuItem<int>>(
                                               (Region value) {
@@ -405,14 +407,13 @@ class _EditProfileInfoState extends State<EditProfileInfo> {
                                             fontWeight: FontWeight.bold,
                                             fontSize: 16),
                                       ),
-                                      style: TextButton.styleFrom(
-                                backgroundColor: Color.fromRGBO(86, 177, 191, 1),
-                                elevation: 5,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5)),
-
-
-                                      ),
+                                style: TextButton.styleFrom(
+                                  backgroundColor:
+                                      Color.fromRGBO(86, 177, 191, 1),
+                                  elevation: 5,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(5)),
+                                ),
                               ),
                             ),
                           ],

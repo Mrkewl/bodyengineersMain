@@ -263,11 +263,11 @@ class _SignInPageState extends State<SignInPage> {
                               width: 130,
                               child: ElevatedButton(
                                 style: TextButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  
-                                ),
-                                backgroundColor: Color.fromRGBO(252, 251, 251, 1),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  backgroundColor:
+                                      Color.fromRGBO(252, 251, 251, 1),
                                 ),
                                 onPressed: () async {
                                   // bulk edit //print('Google Sign-in Start');
@@ -333,13 +333,12 @@ class _SignInPageState extends State<SignInPage> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 16),
                               ),
-                              style: TextButton.styleFrom(
-                        backgroundColor: Color.fromRGBO(86, 177, 191, 1),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8)),
-
-                              ),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
                       ),
                     ),
                   ],

@@ -365,13 +365,12 @@ class _SignUpPageState extends State<SignUpPage> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 16),
                               ),
-                              style: TextButton.styleFrom(
-                        backgroundColor: Color.fromRGBO(86, 177, 191, 1),
-                        elevation: 5,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8)),
-
-                              ),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(86, 177, 191, 1),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
                       ),
                     ),
                   ],
