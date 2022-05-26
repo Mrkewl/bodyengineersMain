@@ -82,7 +82,7 @@ class Routes {
     "/edit_profile_info": (context) => EditProfileInfo(),
     "/change_password": (context) => ChangePassword(),
     "/drawer_settings": (context) => Settings(),
-    "/sync_devices": (context) => SyncDevices(),
+    // "/sync_devices": (context) => SyncDevices(),
     "/achievements": (context) => AchievementsScreen(),
     "/video_tutorial": (context) => VideoTutorialPage(),
     "/bs_menu": (context) => BodyStatsMenu(),

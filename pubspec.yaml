@@ -18,76 +18,73 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.42+42
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^2.0.6
+  shared_preferences: ^2.0.15
   flutter_localizations:
     sdk: flutter
-  cupertino_icons: ^1.0.3
-  provider: ^5.0.0
-  flutter_launcher_icons: ^0.9.0
-  firebase_auth: ^1.2.0
-  firebase_core: ^1.2.0
-  cloud_firestore: ^2.2.0
-  http: ^0.13.3
-  flutter_speed_dial: ^3.0.5
-  flutter_svg: ^0.22.0
-  youtube_player_flutter: ^8.0.0
-  sqflite: ^2.0.0+3
-  path_provider: ^2.0.2
-  image_picker: ^0.7.5+3
+  cupertino_icons: ^1.0.4
+  provider: ^6.0.3
+  flutter_launcher_icons: ^0.9.2
+  firebase_auth: ^3.3.18
+  firebase_core: ^1.17.0
+  cloud_firestore: ^3.1.16 
+  http: ^0.13.4
+  flutter_speed_dial: ^6.0.0
+  flutter_svg: ^1.1.0
+  youtube_player_flutter: ^8.1.0
+  sqflite: ^2.0.2+1 
+  path_provider: ^2.0.10
+  image_picker: ^0.8.5+3 
   animated_text_kit: ^4.2.1
-  permission_handler: ^8.0.0+2
-  google_sign_in: ^5.0.4
-  firebase_storage: ^8.1.0
-  flutter_facebook_auth: ^3.4.0
-  table_calendar: ^3.0.0
-  story_view: ^0.13.1
-  video_player: ^2.1.4
-  paulonia_cache_image: ^0.4.1
+  permission_handler: ^9.2.0
+  google_sign_in: ^5.3.2
+  firebase_storage: ^10.2.16
+  flutter_facebook_auth: ^4.3.4
+  table_calendar: ^3.0.5
+  # story_view: ^0.13.1
+  video_player: ^2.4.2
+  paulonia_cache_image: ^1.0.0
   # cached_video_player: ^2.0.0-dev.1
-  camera: ^0.8.1+1
-  collection: ^1.15.0
-  video_thumbnail: ^0.3.3
-  connectivity: ^3.0.6
+  camera: ^0.9.7
+  collection: ^1.16.0 
+  video_thumbnail: ^0.5.0
+  # connectivity: ^3.0.6
   shimmer: ^2.0.0
-  flutter_typeahead: ^3.1.3
-  smart_select:
-    git:
-      url: https://github.com/iktakahiro/flutter_smart_select.git
-      ref: null-safety
+  flutter_typeahead: ^4.0.0
+  smart_select: ^4.3.2
   # image_gallery: ^1.2.0
   # native_video_view: ^0.3.0
   ###Below For Encoding Video
-  timeago: ^3.0.2
-  flutter_dotenv: ^5.0.0
+  timeago: ^3.2.2 
+  flutter_dotenv: ^5.0.2
   transparent_image: ^2.0.0
   # flutter_ffmpeg: ^0.4.0
   filesize: ^2.0.1
   # social_media_widgets: ^1.0.0+2
-  url_launcher: ^6.0.4
+  url_launcher: ^6.1.2
   localstorage: ^4.0.0+1
   # vibration: ^1.7.4-nullsafety.0
-  lottie: ^1.0.1
-  cached_network_image: ^3.1.0-alpha.1
-  syncfusion_flutter_charts: ^19.1.65
-  syncfusion_flutter_gauges: ^19.1.65
-  flutter_web_browser: "^0.14.0"
-  flutter_webview_plugin: ^0.4.0
-  google_fonts: ^2.1.0
-  googleapis: ^3.0.0
-  googleapis_auth: ^1.1.0
-  flutter_local_notifications: ^6.0.0
-  firebase_messaging: ^10.0.0
-  flutter_document_picker: ^5.0.1-nullsafety.0
-  flutter_native_timezone: ^1.1.0
-  chewie: ^1.2.0
-  firebase_analytics: ^8.1.0
-  just_audio: ^0.7.5
-  vibration: ^1.7.4-nullsafety.0
+  lottie: ^1.3.0
+  cached_network_image: ^3.2.1
+  syncfusion_flutter_charts: ^20.1.57
+  syncfusion_flutter_gauges: ^20.1.57
+  flutter_web_browser: ^0.17.1
+  # flutter_webview_plugin: ^0.4.0
+  google_fonts: ^3.0.1
+  googleapis: ^8.1.0
+  googleapis_auth: ^1.3.1
+  flutter_local_notifications: ^9.5.3+1
+  firebase_messaging: ^11.4.0
+  flutter_document_picker: ^5.1.0
+  flutter_native_timezone: ^2.0.0
+  chewie: ^1.3.3
+  firebase_analytics: ^9.1.8
+  just_audio: ^0.9.21
+  vibration: ^1.7.3
   feature_discovery: ^0.14.0
   # sounds:
   #   git:

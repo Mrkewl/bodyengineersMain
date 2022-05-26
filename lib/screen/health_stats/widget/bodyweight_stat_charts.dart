@@ -76,7 +76,7 @@ class _BodyWeightChartsState extends State<BodyWeightCharts> {
           axisLine: AxisLine(width: 0),
           majorTickLines: MajorTickLines(size: 0)),
       series: _getDefaultAreaSeries(),
-      onPointTapped: (args) {
+      onAxisLabelTapped: (args) {
         Navigator.pushNamed(context, '/body_weight');
       },
       tooltipBehavior: TooltipBehavior(enable: false),

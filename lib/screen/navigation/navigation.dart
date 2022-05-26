@@ -15,7 +15,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../translations.dart';
 import '../common_appbar_for_navigation.dart';
 import '../common_drawer.dart';
 import '../bodystats/bs_menu.dart';
@@ -44,7 +43,7 @@ class _NavigationPageState extends State<NavigationPage> {
   StreamSubscription? iosSubscription;
   @override
   void initState() {
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       FeatureDiscovery.discoverFeatures(
           context,
           <String>['feature1', 'feature2', 'feature3', 'feature4', 'feature5']
@@ -115,7 +114,6 @@ class _NavigationPageState extends State<NavigationPage> {
 
   int? _index = 0;
 
-
   final List<Widget> _pages = [
     // Feed(),
     DashboardScreen(),
@@ -142,7 +140,8 @@ class _NavigationPageState extends State<NavigationPage> {
       _index = _index! + 1;
     });
   }
-    void pushToNextBottomNavigationFeaturetoZero() {
+
+  void pushToNextBottomNavigationFeaturetoZero() {
     setState(() {
       _index = 0;
     });
@@ -242,6 +241,7 @@ class _NavigationPageState extends State<NavigationPage> {
           showUnselectedLabels: true,
           items: [
             BottomNavigationBarItem(
+              label: '1',
               icon: DescribedFeatureOverlay(
                 onComplete: () async {
                   pushToNextBottomNavigationFeature();
@@ -294,31 +294,32 @@ class _NavigationPageState extends State<NavigationPage> {
                 ),
               ),
               // ignore: deprecated_member_use
-              title: Column(
-                children: [
-                  Text(
-                    allTranslations.text('dashboard')!,
-                    style: TextStyle(
-                      color: _index == 0
-                          ? !isDark
-                              ? Color.fromRGBO(8, 112, 138, 1)
-                              : Colors.white
-                          : Color.fromRGBO(182, 182, 182, 1),
-                      fontSize: 12,
-                    ),
-                  ),
-                  Visibility(
-                    visible: _index == 0,
-                    child: Container(
-                        margin: EdgeInsets.only(top: 2),
-                        height: 3,
-                        width: MediaQuery.of(context).size.width * 0.12,
-                        color: Color.fromRGBO(8, 112, 138, 1)),
-                  ),
-                ],
-              ),
+              // title: Column(
+              //   children: [
+              //     Text(
+              //       allTranslations.text('dashboard')!,
+              //       style: TextStyle(
+              //         color: _index == 0
+              //             ? !isDark
+              //                 ? Color.fromRGBO(8, 112, 138, 1)
+              //                 : Colors.white
+              //             : Color.fromRGBO(182, 182, 182, 1),
+              //         fontSize: 12,
+              //       ),
+              //     ),
+              //     Visibility(
+              //       visible: _index == 0,
+              //       child: Container(
+              //           margin: EdgeInsets.only(top: 2),
+              //           height: 3,
+              //           width: MediaQuery.of(context).size.width * 0.12,
+              //           color: Color.fromRGBO(8, 112, 138, 1)),
+              //     ),
+              //   ],
+              // ),
             ),
             BottomNavigationBarItem(
+              label: '2',
               icon: DescribedFeatureOverlay(
                 onComplete: () async {
                   pushToNextBottomNavigationFeature();
@@ -366,31 +367,32 @@ class _NavigationPageState extends State<NavigationPage> {
                 ),
               ),
               // ignore: deprecated_member_use
-              title: Column(
-                children: [
-                  Text(
-                    allTranslations.text('planner')!,
-                    style: TextStyle(
-                      color: _index == 1
-                          ? !isDark
-                              ? Color.fromRGBO(8, 112, 138, 1)
-                              : Colors.white
-                          : Color.fromRGBO(182, 182, 182, 1),
-                      fontSize: 12,
-                    ),
-                  ),
-                  Visibility(
-                    visible: _index == 1,
-                    child: Container(
-                        margin: EdgeInsets.only(top: 2),
-                        height: 3,
-                        width: MediaQuery.of(context).size.width * 0.12,
-                        color: Color.fromRGBO(8, 112, 138, 1)),
-                  ),
-                ],
-              ),
+              // title: Column(
+              //   children: [
+              //     Text(
+              //       allTranslations.text('planner')!,
+              //       style: TextStyle(
+              //         color: _index == 1
+              //             ? !isDark
+              //                 ? Color.fromRGBO(8, 112, 138, 1)
+              //                 : Colors.white
+              //             : Color.fromRGBO(182, 182, 182, 1),
+              //         fontSize: 12,
+              //       ),
+              //     ),
+              //     Visibility(
+              //       visible: _index == 1,
+              //       child: Container(
+              //           margin: EdgeInsets.only(top: 2),
+              //           height: 3,
+              //           width: MediaQuery.of(context).size.width * 0.12,
+              //           color: Color.fromRGBO(8, 112, 138, 1)),
+              //     ),
+              //   ],
+              // ),
             ),
             BottomNavigationBarItem(
+              label: '3',
               icon: DescribedFeatureOverlay(
                 onComplete: () async {
                   pushToNextBottomNavigationFeaturetoZero();
@@ -435,31 +437,32 @@ class _NavigationPageState extends State<NavigationPage> {
                 ),
               ),
               // ignore: deprecated_member_use
-              title: Column(
-                children: [
-                  Text(
-                    allTranslations.text('library')!,
-                    style: TextStyle(
-                      color: _index == 2
-                          ? !isDark
-                              ? Color.fromRGBO(8, 112, 138, 1)
-                              : Colors.white
-                          : Color.fromRGBO(182, 182, 182, 1),
-                      fontSize: 12,
-                    ),
-                  ),
-                  Visibility(
-                    visible: _index == 2,
-                    child: Container(
-                        margin: EdgeInsets.only(top: 2),
-                        height: 3,
-                        width: MediaQuery.of(context).size.width * 0.12,
-                        color: Color.fromRGBO(8, 112, 138, 1)),
-                  ),
-                ],
-              ),
+              // title: Column(
+              //   children: [
+              //     Text(
+              //       allTranslations.text('library')!,
+              //       style: TextStyle(
+              //         color: _index == 2
+              //             ? !isDark
+              //                 ? Color.fromRGBO(8, 112, 138, 1)
+              //                 : Colors.white
+              //             : Color.fromRGBO(182, 182, 182, 1),
+              //         fontSize: 12,
+              //       ),
+              //     ),
+              //     Visibility(
+              //       visible: _index == 2,
+              //       child: Container(
+              //           margin: EdgeInsets.only(top: 2),
+              //           height: 3,
+              //           width: MediaQuery.of(context).size.width * 0.12,
+              //           color: Color.fromRGBO(8, 112, 138, 1)),
+              //     ),
+              //   ],
+              // ),
             ),
             BottomNavigationBarItem(
+              label: '4',
               icon: DescribedFeatureOverlay(
                 onComplete: () async {
                   pushToNextBottomNavigationFeature();
@@ -507,29 +510,29 @@ class _NavigationPageState extends State<NavigationPage> {
                 ),
               ),
               // ignore: deprecated_member_use
-              title: Column(
-                children: [
-                  Text(
-                    allTranslations.text('workout')!,
-                    style: TextStyle(
-                      color: _index == 3
-                          ? !isDark
-                              ? Color.fromRGBO(8, 112, 138, 1)
-                              : Colors.white
-                          : Color.fromRGBO(182, 182, 182, 1),
-                      fontSize: 12,
-                    ),
-                  ),
-                  Visibility(
-                    visible: _index == 3,
-                    child: Container(
-                        margin: EdgeInsets.only(top: 2),
-                        height: 3,
-                        width: MediaQuery.of(context).size.width * 0.12,
-                        color: Color.fromRGBO(8, 112, 138, 1)),
-                  ),
-                ],
-              ),
+              // title: Column(
+              //   children: [
+              //     Text(
+              //       allTranslations.text('workout')!,
+              //       style: TextStyle(
+              //         color: _index == 3
+              //             ? !isDark
+              //                 ? Color.fromRGBO(8, 112, 138, 1)
+              //                 : Colors.white
+              //             : Color.fromRGBO(182, 182, 182, 1),
+              //         fontSize: 12,
+              //       ),
+              //     ),
+              //     Visibility(
+              //       visible: _index == 3,
+              //       child: Container(
+              //           margin: EdgeInsets.only(top: 2),
+              //           height: 3,
+              //           width: MediaQuery.of(context).size.width * 0.12,
+              //           color: Color.fromRGBO(8, 112, 138, 1)),
+              //     ),
+              //   ],
+              // ),
             ),
           ],
         ),

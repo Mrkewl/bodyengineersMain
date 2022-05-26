@@ -74,7 +74,7 @@ class _StepStatChartsState extends State<StepStatCharts> {
           axisLine: AxisLine(width: 0),
           majorTickLines: MajorTickLines(size: 0)),
       series: _getDefaultAreaSeries(),
-      onPointTapped: (args) {
+      onAxisLabelTapped: (args) {
         Navigator.pushNamed(context, '/step_stats',
             arguments: {'garmin_list': garminList});
       },

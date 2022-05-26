@@ -80,7 +80,7 @@ class _RestingHeartStatChartsState extends State<RestingHeartStatCharts> {
           axisLine: AxisLine(width: 0),
           majorTickLines: MajorTickLines(size: 0)),
       series: _getDefaultAreaSeries(),
-      onPointTapped: (PointTapArgs args) {
+      onAxisLabelTapped: (args) {
         Navigator.pushNamed(context, '/resting_hr');
       },
       tooltipBehavior: TooltipBehavior(enable: false),

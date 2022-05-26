@@ -67,6 +67,7 @@ class _BodyFatChartsState extends State<BodyFatCharts> {
           intervalType: DateTimeIntervalType.years,
           majorGridLines: MajorGridLines(width: 0),
           edgeLabelPlacement: EdgeLabelPlacement.none),
+
       primaryYAxis: NumericAxis(
           minimum: 0,
           labelFormat: '',
@@ -76,7 +77,8 @@ class _BodyFatChartsState extends State<BodyFatCharts> {
           axisLine: AxisLine(width: 0),
           majorTickLines: MajorTickLines(size: 0)),
       series: _getDefaultAreaSeries(),
-      onPointTapped: (arg) {
+      onDataLabelTapped: 
+      (arg) {
         Navigator.pushNamed(context, '/bodyfat');
       },
       tooltipBehavior: TooltipBehavior(enable: false),

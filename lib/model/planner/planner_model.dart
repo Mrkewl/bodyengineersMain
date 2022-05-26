@@ -728,7 +728,8 @@ class PlannerModel with ChangeNotifier {
       });
       workout.userWorkoutSet.forEach((userWorkout) {
         // 19 means Kneeling Push Up
-        if (((workout.exercise!.equipmentGroup.any((equipment) => equipment.equipmentName == 'Bodyweight')) ||
+        if (((workout.exercise!.equipmentGroup.any(
+                    (equipment) => equipment.equipmentName == 'Bodyweight')) ||
                 userWorkout.kg > 0) &&
             userWorkout.rep! > 0)
           exHistory.add(ExerciseHistoryElement.fromSqfliteJson({
@@ -835,7 +836,7 @@ class PlannerModel with ChangeNotifier {
     var androidPlatformChannelSpecifics = AndroidNotificationDetails(
       'channel id',
       'channel name',
-      'channel description',
+      channelDescription: 'channel description',
       icon: '@mipmap/ic_launcher',
       largeIcon: DrawableResourceAndroidBitmap('@mipmap/ic_launcher'),
     );

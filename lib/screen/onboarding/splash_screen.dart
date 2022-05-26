@@ -24,14 +24,14 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> afterComplete() async {
-    return WidgetsBinding.instance!.addPostFrameCallback((_) async =>
+    return WidgetsBinding.instance.addPostFrameCallback((_) async =>
         await Navigator.pushNamedAndRemoveUntil(
             context, '/navigation', (route) => false,
             arguments: {'index': 0}));
   }
 
   checkInformation() async {
-    WidgetsBinding.instance!.addPostFrameCallback((_) =>
+    WidgetsBinding.instance.addPostFrameCallback((_) =>
         // you can use "context" here, for example:
         // await Future<String>.delayed(const Duration(seconds: 3));
         Navigator.pushNamedAndRemoveUntil(

@@ -22,7 +22,6 @@ import '../../../screen/widget/calendar/calendar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -284,8 +283,10 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   showNotification() async {
-    var android = AndroidNotificationDetails('id', 'channel ', 'description',
-        priority: Priority.high, importance: Importance.max);
+    var android = AndroidNotificationDetails('id', 'channel ',
+        channelDescription: 'description',
+        priority: Priority.high,
+        importance: Importance.max);
     var iOS = IOSNotificationDetails();
     var platform = new NotificationDetails(android: android, iOS: iOS);
     await flutterLocalNotificationsPlugin.show(
